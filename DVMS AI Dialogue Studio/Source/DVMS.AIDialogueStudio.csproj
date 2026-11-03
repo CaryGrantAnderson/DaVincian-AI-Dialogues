@@ -1,0 +1,30 @@
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration><Platform Condition="'$(Platform)'==''">AnyCPU</Platform>
+    <ProjectGuid>{975281AE-1D76-474B-95EF-6C840EF99921}</ProjectGuid><OutputType>WinExe</OutputType>
+    <RootNamespace>DVMS.AIDialogueStudio</RootNamespace><AssemblyName>DVMS.AIDialogueStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><LangVersion>7.3</LangVersion><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <OutputPath>..\Build\$(Configuration)\</OutputPath><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType>
+    <ContentSQLiteInteropFiles>true</ContentSQLiteInteropFiles><StartupObject>DVMS.AIDialogueStudio.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Data"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/><Reference Include="System.Web.Extensions"/>
+    <Reference Include="System.Net.Http"/><Reference Include="System.Security"/>
+    <Reference Include="DevExpress.XtraEditors.v25.1, Version=25.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+    <Reference Include="DevExpress.Data.v25.1, Version=25.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+    <Reference Include="DevExpress.Utils.v25.1, Version=25.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+    <Reference Include="DevExpress.XtraBars.v25.1, Version=25.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+    <Reference Include="DevExpress.XtraTreeList.v25.1, Version=25.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+    <Reference Include="DevExpress.XtraGrid.v25.1, Version=25.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+    <Reference Include="DevExpress.BonusSkins.v25.1, Version=25.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+    <ProjectReference Include="..\..\..\2 - DVMS Dev\Desktop\Framework\DVMS Desktop Framework\Source\DVMSDesktop\DVMSDesktop.csproj"><Project>{8521C2B4-09F5-4DFB-B771-C09B95FCF3F5}</Project><Name>DVMSDesktop</Name></ProjectReference>
+    <ProjectReference Include="..\..\..\2 - DVMS Dev\Desktop\Framework\DVMS Desktop Framework\Source\DVMSDesktop.Controls\DVMSDesktop.Controls.csproj"><Project>{D4B5B253-26F5-4A69-87F7-0FCBD25D4BD2}</Project><Name>DVMSDesktop.Controls</Name></ProjectReference>
+    <Compile Include="Program.cs"/><Compile Include="Models.cs"/><Compile Include="RecordingRepository.cs"/><Compile Include="StudioCatalog.cs"/><Compile Include="DialogueImporter.cs"/><Compile Include="StudioModule.cs"/><Compile Include="StudioView.cs"/><Compile Include="StudioView.Designer.cs"><DependentUpon>StudioView.cs</DependentUpon></Compile><Compile Include="StudioTests.cs"/>
+    <Compile Include="RecordingNavigation.cs"/><Compile Include="StudioForm.cs"/><Compile Include="LiveRecordingForm.cs"/><Compile Include="LiveRecordingStore.cs"/><Compile Include="PcmWave.cs"/>
+    <Compile Include="LiveIntegrationTests.cs"/><Compile Include="ConnectionSettings.cs"/><Compile Include="DialogueDestinationForm.cs"/><Compile Include="AudioImport.cs"/>
+    <Content Include="Live\*"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+    <PackageReference Include="Dapper" Version="2.1.66"/><PackageReference Include="System.Data.SQLite.Core" Version="1.0.119"/>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4022.49"/>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets"/>
+</Project>

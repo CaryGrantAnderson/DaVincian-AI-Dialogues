@@ -1,0 +1,49 @@
+Nex - Voice Parameters - 101826
+===============================
+10/18/2026
+
+
+Possible Stock Voices:	OpenAI.fm
+
+	- Cedar		- Dramatic is ok, but not Friendly.
+	- Alloy 	- Friendly/Dramatic is ok.
+
+	- Sage		- Nice but female.  Dramatic is fairly good.
+	- Marin		- Nice but female.  Dramatic is fairly good.
+
+
+Male
+Slight British Accent
+Deep
+Resonant
+Paced Delivery
+
+
+Prompt Settings:
+
+Accent:			British, moderate accent
+Age:			Mature
+Presentation:		Authoritive
+Pitch:			Mid-Range Pitch
+Timbre:			Smooth and Rich
+Texture:		Smooth
+Loudness:		Moderate Voice Effort
+Speech Rate:		Moderate Pace
+Distinctiveness:	Distinctive
+
+
+
+
+API Settings:
+
+Accent			British
+Emotional range		Low
+Intonation		?
+Impressions		?
+Speed of speech		Slow and measured
+Tone			?
+Whispering		None.
+
+
+
+			=== END ===

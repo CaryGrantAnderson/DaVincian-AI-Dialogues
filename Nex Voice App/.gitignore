@@ -1,0 +1,6 @@
+bin/
+obj/
+Data/
+appsettings.Local.json
+*.user
+.runtime/

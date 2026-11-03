@@ -1,0 +1,37 @@
+PASS Unassigned Recordings has its own SQLite database and file container
+PASS Windows-protected API key survives settings reload without plaintext storage
+PASS central connection settings can remove the saved key
+PASS central connection settings opens as a visible native dialog
+PASS settings, catalog and navigation share one application DB
+PASS framework's generic document import works with shared database
+PASS existing v1 catalog migrates to Unassigned Recordings while preserving Recording identity and files
+PASS catalog remembers independent Recording identity and location
+PASS destination picker preselects the current Dialogue and offers new and unassigned destinations
+PASS Recording membership survives ordinary catalog updates
+PASS Dialogue SQLite index contains its assigned Recording
+PASS moving membership removes the old index entry and keeps the Recording files
+PASS speaker import retains preamble and links question with answer
+PASS import preserves original bytes
+PASS external original unchanged
+PASS edits persist under stable IDs without replacing original utterances
+PASS order and topic survive reopen
+PASS previous revision remains intact
+PASS stale save rejected without overwriting newer revision
+PASS topic cycles rejected
+PASS multiple source contributions accumulate in one Recording
+PASS restoring history creates a new revision
+PASS Markdown export uses saved revision
+PASS portable folder has media and source directories
+PASS portable Recording reopens in new location and catalog updates
+PASS SQLite integrity check
+PASS database rejects mutation of original utterances
+PASS DevExpress workspace loads real Recording and exports its saved dialogue
+PASS editor changes notify the framework dirty/save lifecycle
+PASS editor Save commits a new revision and clears dirty state
+PASS actual 58-message long dialogue imports with all speaker passages plus preserved preamble
+PASS framework root uses Dialogues terminology
+PASS Recording appears under its assigned Dialogue container
+PASS Recording topics appear beneath their parent topics in the framework tree
+PASS Recording title is the actual framework workspace and container node
+PASS topic activation opens the owning Recording workspace
+ALL CHECKS PASSED

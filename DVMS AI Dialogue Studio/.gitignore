@@ -1,0 +1,6 @@
+Build/
+AppData/
+Source/obj/
+.vs/
+*.user
+*.suo

@@ -1,0 +1,21 @@
+PASS v1 Recording upgrades transactionally without changing its identity or dialogue
+PASS WAV header describes the durable audio prefix while recording is still active
+PASS recovery leaves an active capture protected by its lock
+PASS missing audio sequence is rejected instead of silently losing a block
+PASS live capture becomes one source contribution and a new Recording revision
+PASS caption retry is idempotent and exact delta spacing is retained
+PASS captions become editable linked dialogue passages
+PASS separate Grant and Nex WAVs have aligned lengths and different source samples
+PASS audio gaps are explicit silence; original per-speaker samples are not mixed
+PASS both original audio tracks are registered as assets with sample metadata
+PASS provider timestamps and estimated local audio alignment are both retained
+PASS Recording database remains valid after live finalization
+PASS stale capture recovers retained WAV prefixes without claiming provider completion
+PASS crash recovery repairs WAV lengths and replays durable journal events missing from SQLite
+PASS recovery does not append duplicate live contributions
+PASS embedded WebView2 finishes a two-track AudioWorklet capture through the actual native bridge
+PASS synthetic 440 Hz and 880 Hz streams produce distinct aligned WAV files
+PASS embedded caption events retain both speakers and timing without API use
+PASS recording indicator, elapsed clock and level meter respond to captured audio and stop on save
+PASS audio import preserves original bytes and registers the asset without inventing a transcript
+ALL LIVE CAPTURE CHECKS PASSED — synthetic audio, no microphone, no API calls.
